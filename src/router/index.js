@@ -1,6 +1,9 @@
 
 import { createRouter, createWebHistory } from 'vue-router'
 
+import routerText from './routes/routerText.js'
+import demos from './routes/demos.js'
+
 const router = createRouter({
   history: createWebHistory(),
   routes: [
@@ -12,17 +15,8 @@ const router = createRouter({
       path: '/ts',
       component: () => import('../views/ts/index.vue')
     },
-    {
-      path: '/demo',
-      name: 'demo',
-      children: [
-        {
-          path: '/demo/rain',
-          name: 'rain',
-          component: () => import('../views/blblDemo/rain.vue')
-        }
-      ]
-    },
+    demos,
+    routerText
   ]
 })
 export default router
