@@ -1,14 +1,23 @@
 better！
 
 
-1.下雨demo
+下雨demo
 /demo/rain
 
-2.导航navDemo
+导航navDemo
+/demo/mobileNav
 
-3.router练习
+router练习
 /routerTest
 
-4.three搭建学习
-/three
+three搭建学习
+/t  hree
 
+pinia!
+/piniaTestp
+
+Vuex↓
+/vuexTest
+
+TypeScript
+/ts
