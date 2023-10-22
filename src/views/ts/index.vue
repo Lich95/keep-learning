@@ -65,10 +65,18 @@ function fn11<T extends [],U>(arg: T, n:U) {
 }
 fn11<[],string>( [] , 'x')
 
-function fn2<T, M>(arg: T, n: M) {
-   if (n) arg = 3;
+function fn2<T>(arg: T):T {
+    return arg
 }
-fn2<number, boolean>(2, true);
+fn2<string>('2');
+
+
+let data:IallData = {
+    pageSize:2,
+    pageNum:3
+}
+
+
 
 </script>
 <style scoped></style> 

@@ -15,6 +15,14 @@ const router = createRouter({
       path: '/ts',
       component: () => import('../views/ts/index.vue')
     },
+    {
+      path: '/vuexTest',
+      component: () => import('../views/vuex_pinia/vuex.vue')
+    },
+    {
+      path: '/piniaTest',
+      component: () => import('../views/vuex_pinia/pinia.vue')
+    },
     demos,
     routerText
   ]

@@ -1,11 +1,16 @@
 import { createApp } from 'vue'
-import Antd from 'ant-design-vue';
-import 'ant-design-vue/dist/reset.css';
 import App from './App.vue'
 
 
-import router from './router'
-const app = createApp(App)
+import Antd from 'ant-design-vue';//ant-design
+import 'ant-design-vue/dist/reset.css';//ant-design携带css文件
 
-// 使用路由实例
-app.use(router).use(Antd).mount('#app')
+
+import { createPinia } from 'pinia' //测试pinia
+import store from './store'
+
+
+import router from './router' //路由
+
+const app = createApp(App)
+app.use(router).use(createPinia()).use(store).use(Antd).mount('#app')
