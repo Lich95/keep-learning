@@ -7,16 +7,18 @@
         <input type="radio" name="menus" id="notification">
 
         <div class="buttons">
-            <label for="home"><HomeFilled /></label>
-            <label for="profile"></label>
-            <label for="likes"></label>
-            <label for="settings"></label>
-            <label for="notification"></label>
+            <label for="home"><AppleOutlined /></label>
+            <label for="profile"><GithubOutlined /></label>
+            <label for="likes"><ChromeOutlined /></label>
+            <label for="settings"><WechatOutlined /></label>
+            <label for="notification"><QqOutlined /></label>
         </div>
     </div>
     <div class="underline"></div>
 </template>
 <script setup>
+import { AppleOutlined,GithubOutlined,ChromeOutlined,WechatOutlined,QqOutlined} from '@ant-design/icons-vue';
+
 
 </script>
 <style scoped>
