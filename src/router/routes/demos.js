@@ -5,11 +5,11 @@ export default  {
       {
         path: '/demo/rain',
         name: 'rain',
-        component: () => import('../../views/blblDemo/rain.vue')
+        component: () => import('../../views/blblDEMO/rain.vue')
       },{
         path: '/demo/mobileNav',
         name: 'mobileNav',
-        component: () => import('../../views/blblDemo/mobileNav.vue')
+        component: () => import('../../views/blblDEMO/mobileNav.vue')
       },
     ]
   }

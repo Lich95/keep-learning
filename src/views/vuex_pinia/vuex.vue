@@ -4,11 +4,11 @@
         <a-button @click="changeName('cc')"></a-button>
     </div>
 </template>
-<script setup>
+<script setup lang="ts">
 import { onMounted } from 'vue'
 import { useStore } from 'vuex'
 const store = useStore()
-const changeName = (name) => {
+const changeName = (name:string) => {
     store.commit('changeUserName', name)
 }
 

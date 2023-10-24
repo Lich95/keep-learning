@@ -9,8 +9,8 @@
         </div>
     </div>
 </template>
-<script setup>
-import { useCount } from '@/store/pinia/index.js'
+<script setup lang="ts">
+import { useCount } from '../../store/pinia/index.js'
 import {PlayCircleOutlined
 } from '@ant-design/icons-vue';
 const useCounter = useCount();

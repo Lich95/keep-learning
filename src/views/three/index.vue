@@ -1,5 +1,5 @@
 <template></template>
-<script setup>
+<script setup lang="ts">
 import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 

@@ -60,10 +60,10 @@ function fn1<T>(arg: T[], n:T) {
 fn1<string>( ['c','l'] , 'x')
 
 
-function fn11<T extends [],U>(arg: T, n:U) {
-    arg.push(n)
-}
-fn11<[],string>( [] , 'x')
+// function fn11<T extends string[],U>(arg: T, n:U) {
+//     arg.push(n)
+// }
+// fn11<[],string>( [] , 'x')
 
 function fn2<T>(arg: T):T {
     return arg

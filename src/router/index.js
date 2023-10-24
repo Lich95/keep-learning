@@ -8,6 +8,10 @@ const router = createRouter({
   history: createWebHistory(),
   routes: [
     {
+      path: '/',
+      component: () => import('../views/catalog.vue')
+    },
+    {
       path: '/three',
       component: () => import('../views/three/index.vue')
     },

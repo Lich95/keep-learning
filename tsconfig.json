@@ -5,7 +5,8 @@
     "module": "ESNext",
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "skipLibCheck": true,
-
+    "noImplicitAny":false,
+    "allowJs":true,
     /* Bundler mode */
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
@@ -13,7 +14,10 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "preserve",
-
+    "baseUrl": "./",
+    "paths": {
+      "*": ["src/*"]
+    },
     /* Linting */
     "strict": true,
     "noUnusedLocals": false, //已声明,但从未使用

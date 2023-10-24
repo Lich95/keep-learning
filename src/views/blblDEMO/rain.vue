@@ -8,7 +8,7 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { onBeforeMount, onMounted } from "vue";
 onBeforeMount(() => { });
 onMounted(() => {
@@ -20,7 +20,7 @@ onMounted(() => {
     dropItem.className = "drop";
     dropItem.style.left = randomNums + "px";
     dropItem.style.top = randomNum + "px";
-    dropDom.appendChild(dropItem);
+    dropDom?.appendChild(dropItem);
 
     setTimeout(() => {
       dropItem.remove();
